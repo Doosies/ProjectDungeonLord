@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 영어소문자, 대문자, 숫자  */
+@font-face {
+  font-family: "pixeng";
+  src: url("@assets/fonts/pixopedia.woff2") format("woff2"); 
+}
+/* 한글마 */
+@font-face {
+  font-family: "pixkor";
+  src: url("@assets/fonts/DungGeunMo.woff2") format("woff2");
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply w-full h-full m-0 p-0 font-my;
+  }
+  * {
+    @apply box-border 
+  }
+}

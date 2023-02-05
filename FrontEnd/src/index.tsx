@@ -1,13 +1,14 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import GlobalStyles from './styles/GlobalStyles'
+import '@src/styles/global.css'
 import App from './App'
+import logo from '@assets/images/Logo.png'
 
 const container = document.getElementById('root')
 const root = createRoot(container!)
 root.render(
   <React.StrictMode>
-    <GlobalStyles />
     <App />
+    <img src={logo}></img>
   </React.StrictMode>,
 )
