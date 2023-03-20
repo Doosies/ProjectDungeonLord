@@ -32,5 +32,6 @@
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript",
     "typescriptreact": "javascript"
-  }
+  },
+  "material-icon-theme.activeIconPack": "nest"
 }
