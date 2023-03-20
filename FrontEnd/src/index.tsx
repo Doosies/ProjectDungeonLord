@@ -1,14 +1,18 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import '@src/styles/global.css'
-import App from './App'
-import logo from '@assets/images/Logo.png'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import '@src/styles/global.css';
+import App from './App';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 
-const container = document.getElementById('root')
-const root = createRoot(container!)
+const container = document.getElementById('root');
+const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-    <App />
-    <img src={logo}></img>
+    <RecoilRoot>
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    </RecoilRoot>
   </React.StrictMode>,
-)
+);

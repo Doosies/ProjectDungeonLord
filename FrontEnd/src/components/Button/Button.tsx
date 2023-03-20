@@ -1,9 +1,9 @@
-import './Button.style.ts'
+import './Button.style.ts';
 
 interface ButtonProps {}
 
 const Button = ({}: ButtonProps) => {
-  return <></>
-}
+  return <></>;
+};
 
-export default Button
+export default Button;

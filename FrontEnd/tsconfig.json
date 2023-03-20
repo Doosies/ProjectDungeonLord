@@ -8,8 +8,8 @@
         "ES2015",
         "DOM"//web 사용
     ],
-    "jsx": "preserve",
-    "baseUrl": "./src",
+    "jsx":"react-jsx",
+    "baseUrl": ".",
     "noEmit": true,
     "strict": true,
     "skipLibCheck": true,

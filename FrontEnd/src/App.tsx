@@ -1,10 +1,28 @@
-import { css } from '@emotion/react'
-import tw from 'twin.macro'
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
-const box = css([
-  tw`bg-red-400 tablet:bg-green-400 desktop:bg-blue-400`,
-  tw`text-6xl`,
-])
-const App = () => <div css={box}>fdf 123 안녕 asdf ASFASF</div>
+import { css } from '@emotion/react';
+import tw from 'twin.macro';
 
-export default App
+import TitlePage from './pages/MainPage';
+
+const gameScreenCss = css([
+  tw`w-h-full flex-col-center bg-dark lgScreen:w-[600px] `,
+]);
+
+const App = () => {
+  const navigate = useNavigate();
+  return (
+    <div css={tw`w-h-full flex-col-center text-white`}>
+      <div css={gameScreenCss}>
+        <Routes>
+          <Route
+            path="/"
+            element={<TitlePage />}
+          />
+        </Routes>
+      </div>
+    </div>
+  );
+};
+
+export default App;
